@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "studius-helper",
+  "version": "1.0",
+
+  "description": "Adds help to studius",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.studius.ai/study"],
+      "js": ["studius.js"]
+    }
+  ]
+
+}
+
